@@ -1,0 +1,32 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title__cv {
+    display: flex;
+    justify-content: center;
+}
+.container__data-img {
+    display: flex;
+    flex-direction: row;
+    border-bottom-style: solid;
+    border-bottom-color: #808080AF;
+    border-bottom-width: 0.0625rem;
+    
+}
+.data {
+    padding: 0.9375rem;
+    width: 50%;
+}
+.img-dog {
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 0.9375rem;
+}
+.sdata {
+    display: flex;
+    justify-content: start;
+}
+.education {
+    margin-left: 2.5rem;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="title__cv">
+            <h1>Curriculum Vitae</h1>
+        </div>
+        <div class="container__data-img">
+        <div class="data">
+            <p class="data__item"><b>Name:</b> {{name}} {{lastname}}</p>
+            <p class="data__item"><b>Adress:</b> {{adress}}</p>
+            <p class="data__item"><b>Phone:</b> {{phone}}</p>
+            <p class="data__item"><b>Email:</b> {{mail}}</p>
+        </div>
+        <div class="image">
+            <img class="img-dog" v-bind:src="img" alt="perro de raza corgi">
+        </div>
+        </div>
+        <div class="sdata">
+            <div class="education">
+            <h2 class="education__title">Education:</h2>
+            <p class="education__item">{{education}}</p>
+            </div>
+        </div>
+        <div class="experience">
+            <ul class="experience__list">
+                <h2 class="list__title">Professional Experience</h2>
+                <li class="list__item">{{experience1}}</li>
+                <li class="list__item">{{experience2}}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                name: "Max",
+                lastname: "Anderson",
+                adress: "123 Adventure Way, Coastal Town, Wonderland",
+                phone: "+1-555-123-4567",
+                mail: "max.anderson@example.com",
+                education: "2015 Bachelor of Science in Environmental Studies",
+                experience1: "2016-2018 Exploration Society: Led multiple successful expeditions to remote regions, collaborating with teams to achieve objectives and navigate challenging terrains.",
+                experience2: "2018-2020 Wilderness Survival Instructor: Conducted training programs on survival skills, providing practical knowledge and guidance to individuals interested in outdoor activities.",
+                img: "assets/imagen/dog.webp"
+            }
+        })
+    </script>
+</body>
+
+</html>
